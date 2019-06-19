@@ -18,8 +18,7 @@ To use directly with Xcode, type "swift package generate-xcodeproj"
 ### Swift Package Manager
 Add the following to your dependencies array in Package.swift:
 ```swift
-.Package(url: "https://github.com/Neo4j-Swift/Bolt-swift.git",
- majorVersion: 0),
+.package(url: "https://github.com/Neo4j-Swift/Bolt-swift.git", from: "5.0.0"),
 ```
 and you can now do a
 ```bash
@@ -27,7 +26,7 @@ swift build
 ```
 
 ### CocoaPods
-Add the 
+Add the
 ```ruby
 pod "BoltProtocol"
 ```
@@ -38,7 +37,7 @@ pod install
 to have Bolt included in your Xcode project via CocoaPods
 
 ### Carthage
-Put 
+Put
 ```ogdl
 github "Neo4j-Swift/Bolt-swift"
 ```
@@ -52,7 +51,7 @@ carthage update
 ```
 instead.
 
-Then do 
+Then do
 ```bash
 cd Carthage/Checkouts/bolt-swift
 swift package generate-xcodeproj
